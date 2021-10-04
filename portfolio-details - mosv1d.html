@@ -56,22 +56,22 @@
         <nav id="navbar" class="nav-menu navbar">
           <ul>
             <li>
-              <a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
+              <a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
             </li>
             <li>
-              <a href="index.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+              <a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
             </li>
             <li>
-              <a href="index.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
+              <a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
             </li>
             <li>
-              <a href="#index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+              <a href="#index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
             </li>
             <li>
-              <a href="index.html" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a>
+              <a href="index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a>
             </li>
             <li>
-              <a href="index.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+              <a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
             </li>
           </ul>
         </nav>
@@ -85,7 +85,7 @@
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2><strong>Ordering Management System Web Vallet</strong></h2>
+            <h2><strong>MoSV1D - Simulation Wave : Momentum Conservation Saint Venant 1 Dimension</strong></h2>
             <ol>
               <li><a href="index.html">Home</a></li>
               <li>Portfoio Details</li>
@@ -109,8 +109,71 @@
                   <div class="swiper-slide">
                     <img src="assets/img/portfolio/apps-mosv1d/Animation_SolitaryWave.gif" alt="" />
                   </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/apps-mosv1d/slide3.jpg" alt="" />
+                  </div>
+
                 </div>
                 <div class="swiper-pagination"></div>
+                <div class="portfolio-description">
+                  <h3><strong>Pendahuluan</strong></h3>
+                  <p style="text-align: justify">
+                    Dengan kemajuan teknologi dan komputasi di era sekarang, model matematika dapat dihampiri secara 
+numerik dan dapat dilakukan komputasi dan di simulasikan oleh komputer. Tetapi kelemahan skema numerik 
+adalah membutuhkan waktu perhitungan yang lama. Di tulisan ini, akan dijelaskan skema numerik sta untuk 
+persamaan SWE-Exner dijalankan dengan skema algoritma paralel (dengan OpenMP) dan serial. 
+Kesulitan dalam menghasilkan animasi berdasarkan model matematika yaitu Saint-Venant 1D menyebabkan 
+banyak orang kesulitan dalam menentukan hasil animasi dari model tersebut dengan parameter-parameter yang 
+telah di tentukan. Dalam menghasilkan animasi tersebut di perlukan perhitungan berdasarkan metode Volume 
+Hingga (Finite Volume Method) pada grid dengan skema staggered sehingga butuh proses yang Panjang. Oleh 
+karena itu di butuhkan sebuah aplikasi untuk dapat menghasilkan animasi berdasarkan inout parameter-parameter 
+yang telah di tentukan oleh pengguna.
+                  </p>
+                  <h4><strong>Latar Belakang</strong></h4>
+                  <p style="text-align: justify">
+                    Agar banyak kalangan pengguna yang dapat memodelkan gelombang dengan menggunakan model 
+                    matematika gelombang Saint-Venant (SV) 1D ini. Maka akan di buat ke dalam bentuk aplikasi yang akan 
+                    menerima inputan berupa angka ke dalam entri dan akan di jalankan menggunakan tombol run. Sehingga 
+                    menghasilkan bentuk animasi dari pemodelan matematika gelombang Saint-Venant atau Shallow Water Equation 
+                    1D. Hasil dari animasi ini juga nantinya akan dapat di simpan dalam bentuk file (.gif). Dalam mempermudah 
+                    pengguna di butuhkan juga penyimpanan data test dari parmeter-parameter yang telah di inputkan. Oleh karena 
+                    itu akan di bangun system untuk penyimpanan data test test tersebut ke dalam file (.txt)
+                    Di dalam penelitian ini akan di bahas terkait simulasi menggunakan model matematika gelombang SaintVenant (SV) atau Shallow Water Equations (SWE) 1D. Dimana Model Saint-Venant ini diimplementasikan secara 
+                    numerik dengan menggunakan metode Volume Hingga (Finite Volume Method) pada grid dengan skema 
+                    staggered. Kasus yang akan di bahas dalam pemodelan ini ada 2, yaitu propagasi gundukan air tanpa kecepatan 
+                    awal, dan simulasi dam-break 1D. Sehingga pengguna mampu menentukan kasus yang akan di lakukan animasinya 
+                    terhadap pemodelan Saint-Venant ini. 
+                    Untuk melakukan instalasi dan panduan penggunaan aplikasi ini, maka nantinya akan di sediakan sebuah 
+                    manual book dalam 2 bahasa yaitu bahasa indonesia dan bahasa inggris. Sehingga pengguna dapat terbantu dalam 
+                    menggunakan aplikasi ini. Aplikasi ini hanya akan kompatibel di gunakan di system operasi windows 10
+                  </p>  
+                  <h4><strong>Topik dan Batasannya</strong></h4>
+                  <p style="text-align: justify">
+                    Berdasarkan masalah yang telah disampaikan di atas, maka dapat ditarik beberapa rumusan masalah, 
+yaitu: Melakukan Simulasi terhadap model Saint-Venant 1D atau Shallow Water Equation 1D dengan cara 
+mengimplementasikan secara numerik menggunakan metode Volume Hingga (Finite Volume Method) pada grid 
+dengan skema staggered ke dalam bentuk aplikasi
+                  </p>
+                  <h4><strong>Hasil Pengujian</strong></h4>
+                  <p style="text-align: justify">
+                    Data dalam Simulasi Saint-Venant ini berupa parameter-parameter yang di simpan dalam bentuk file (.txt). 
+Parameter-paramter tersebut adalah xmin, xmax, dx, tfin, dt, dt_an dan intial condition. Terdapat 2 kasus initial 
+condition yaitu solitary wave dan dam break. Pada kasus solitary wave memiliki parameter xC, xwide dan A0 
+sedangkan kasus dam break memiliki parameter width dan height. Data hanya dapat di jalankan melalui aplikasi 
+MoSV 1D. Dalam melakukan animasi data tersebut akan di proses melalui aplikasi sehingga menghasilkan 
+animasi sesuai kasus yang di tentukan. 
+                  </p>  
+                  <h4><strong>Kesimpulan</strong></h4>
+                  <p style="text-align: justify">
+                    Berdasarkan hasil dan anilisis Tugas Akhir ini, diperoleh kesimpulan bahwa aplikasi MoSV-1D dapat 
+menghasilkan output berupa hasil animasi 2 case yaitu dam-break dan solitary wave. Berdasarakan parameter input 
+yaitu xmin, xmax, dx, tfin, dt, dt_an. Kemudian menentukan case yang akan ditentukan yaitu solitary wave
+memiliki parameter input Xc, xwide & A0 dan dam break memiliki parameter input width & height. Parameter 
+input akan melakukan komputasi melalui aplikasi MoSV-1D sehingga menghasilkan output berupa animasi 
+pemodelan saint-venant 1 dimensi berdasarkan kasus yang dipilih.
+                  </p>  
+                </div>
               </div>
             </div>
 
@@ -160,13 +223,21 @@
               </div>
 
               <div class="portfolio-description">
-                <h2>This is an example of portfolio detail</h2>
+                <h2>Abstract - MoSV1D</h2>
                 <p style="text-align: justify">
-                  Vallet adalah Sebuah perusahaan yang dinaungi PT Pakar Layanan Tanpa Batas yang sebagai Karya Anak Bangsa yang memfokuskan diri pada Penyediaan Beragam Layanan yang berkaitan dengan Kebutuhan Desain Grafis, Aplikasi Desain
-                  Grafis Online, Audio Visual, Desain Corporate Identity dan Branding. Vallet merupakan sebuah startup yang dibangun mulai 5 Desember 2018. Vallet berkomitmen untuk memberikan berbagai kemudahan dalam melakukan pemenuhan
-                  kebutuhan Desain untuk Bisnis maupun Produk customer. Agar customer dapat mendesain secara online dengan cepat dan mudah. Semoga hari-harimu terbantu. Vallet mengembangkan Kerjasama dengan hampir seluruh Instansi
-                  Pemerintah, Kampus, SMK, Media Partner dan Komunitas di area Bandung dan Sekitarnya. Vallet juga menjangkau lebih dari 50 Wilayah di Indonesia melalui mekanisme Telemarketing. Inilah yang disebut Jejaring Vallet.
+                  MoSV 1D or Momentum Conservation Saint-Venant 1 Dimension is a Windows-based application to simulate 1D 
+longwave propagation. This application is based on the mathematical model of the wave Saint-Venant (SV) or 
+Shallow Water Equations (SWE) 1D. The SV Model is implemented numerically using the Finite Volume Method 
+on a grid with a staggered scheme. There are two examples of cases in this application, namely propagation of 
+water bumps without initial velocity, and 1D dam-break simulation. The 1S MoSV numerical model is written in 
+Python, and is packaged in a Windows application.
                 </p>
+                <h2>--------------------------------------</h2>
+                <p style="text-align: justify">MoSV 1D atau Momentum Conservation Saint-Venant 1 Dimension merupakan aplikasi berbasis Windows untuk 
+                  mensimulasikan propagasi gelombang panjang 1D. Aplikasi ini berdasarkan model matematika gelombang Saint Venant (SV) atau Shallow Water Equations (SWE) 1D. Model SV ini diimplementasikan secara numerik dengan 
+                  menggunakan metode Volume Hingga (Finite Volume Method) pada grid dengan skema staggered. Terdapat dua 
+                  contoh kasus pada aplikasi ini, yaitu propagasi gundukan air tanpa kecepatan awal, dan simulasi dam-break 1D. 
+                  Model numerik MoSV 1D ditulis dalam bahasa Python, dan dikemas dalam aplikasi Windows.</p>
               </div>
             </div>
           </div>
